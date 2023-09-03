@@ -71,7 +71,6 @@ header .navbar a{
 
 header .navbar a:hover{
     color: var(--green);
-    text-shadow: var(--lightgreen) 1px 0 20px;
 }
 
 #menu-bar{
@@ -96,11 +95,13 @@ section{
 
 .btn{
     display: inline-block;
-    padding: .8rem 3rem;
-    border: .2rem solid var(--logo-brown);
-    color: var(--darkgrey);
+    padding: .9rem 3rem;
+    border: .2rem solid var(--logo-yellow);
+    background: var(--logo-yellow);
+    color: var(--logo-brown);
+    font-family: 'Lobster';
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     border-radius: .5rem;
     position: relative;
@@ -110,10 +111,10 @@ section{
 }
 
 .btn:hover{
-    color: var(--logo-brown);
+    color: var(--white);
     font-weight: bold;
     transition: .3s smooth;
-    background: var(--logo-yellow);
+    background: var(--logo-brown);
 }
 
 .home{
@@ -334,6 +335,25 @@ section{
 }
 /*SPECIALITY "Menu v3" END*/
 
+/*SCROLL TOP BTN*/
+#scroll-top{
+    position: fixed;
+    top: -120%;
+    right: 2rem;
+    padding: .5rem 1.5rem;
+    font-size: 4rem;
+    background: var(--white);
+    border: 2px solid var(--logo-yellow);
+    color: var(--logo-brown);
+    border-radius: 50%;
+    transition: 1s smooth;
+}
+
+#scroll-top.active{
+    top: calc(100% - 12rem);
+}
+/*SCROLL TOP BTN END*/
+
 
 
 
@@ -399,7 +419,7 @@ section{
         display: block;
         border: .2rem solid rgba(0,0,0,.1);
         border-radius: 4px;
-        border-left: .5rem solid var(--green);
+        border-top: .5rem solid var(--logo-brown);
         background: var(--brown);
     }
 }
