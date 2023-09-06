@@ -141,7 +141,7 @@ section{
     width: 100%;
     padding: 1rem;
     border: 2px solid var(--black);
-    background: var(--white);
+    background: var(--white); 
 }
 
 .home .content h3{
@@ -354,6 +354,44 @@ section{
 }
 /*SCROLL TOP BTN END*/
 
+/*FOOTER*/
+.footer{
+    background: var(--brown);
+    text-align: center;
+}
+
+.footer .share{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .share a{
+    font-size: 30px;
+    color: var(--logo-brown);
+    background: var(--white);
+    border-radius: 25px;
+    border:2px solid var(--logo-yellow);
+    transition: .5s ease;
+}
+
+.footer .share a i{
+   padding: 8px;
+}
+
+.footer .share a:hover{
+    background: var(--logo-yellow);
+    box-shadow: 0 0 1rem var(--logo-brown);
+}
+
+.footer .credit{
+    font-size: 1.5rem;
+    padding: 2rem 1rem;
+    color: var(--white);
+    font-weight: normal;
+}
+/*FOOTER END*/
 
 
 
